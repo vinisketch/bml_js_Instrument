@@ -12,13 +12,12 @@ if (!defined ($outputIndex)) { $outputIndex = "index.bml"; }
 my $jsPath = $cfg->param('jsPath');
 if (!defined ($jsPath)) { die ("pas de js path dans conf file") ; }
 
-my $outputPath = $cfg->param('outputPath');
-if (!defined ($outputPath)) { $outputPath = "output" ; }
+my $tempPath = "tmp_files";
 
 my @jsFiles = $cfg->param('jsFiles');
 if (!defined ($jsPath)) { die ("pas de fichiers js definis") ; }
 
-mkpath ($outputPath, 0, 0777);
+mkpath ($tempPath, 0, 0777);
 
 use Cwd 'abs_path';
 my $base_path = abs_path($0);
@@ -28,7 +27,7 @@ open (HEAD_BML,  $base_path . "/resources/header.bml") || die ("Erreur d'ouvertu
 
 open (OUTPUT,">".$outputIndex) || die ("Erreur de creation de index.bml") ;
 
-system "jscoverage $jsPath $outputPath";
+system "jscoverage $jsPath $tempPath";
 
 
 
@@ -44,7 +43,7 @@ sub parseFile {
   
   my $file_path = $_[0];
 
-  open (SRC,"$outputPath/$file_path") || die ("Erreur d'ouverture de $file_path") ;
+  open (SRC,"$tempPath/$file_path") || die ("Erreur d'ouverture de $file_path") ;
   
   findFirst ("$file_path");
     
@@ -71,7 +70,7 @@ print OUTPUT "endAnalyse ();\n";
 print OUTPUT "]]></script>\n</body>\n</bml>";
 
 close OUTPUT;
-rmtree $outputPath;
+rmtree $tempPath;
 
 
 #(rindex ($_,"jscoverage['utils.js'].source") == -1))
