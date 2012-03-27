@@ -2,9 +2,17 @@
 
 ##Execution
 
-.bml_js_Instrument/instrument.perl
+.tools/instrument.perl
 
 ##Config
+
+jsPath= xxx
+
+outputPath= xxx
+
+outputIndex=index.bml
+
+jsFiles=xxx,xxx,xxx
 
 
 ##Requerements
