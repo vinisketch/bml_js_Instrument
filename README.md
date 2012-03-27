@@ -8,11 +8,9 @@
 
 jsPath= xxx
 
-outputPath= xxx
+outputIndex=xxx.bml
 
-outputIndex=index.bml
-
-jsFiles=xxx,xxx,xxx
+jsFiles=xxx.js,xxx.js,xxx.js
 
 
 ##Requerements
@@ -29,7 +27,13 @@ Perl module for configuration file
 sudo cpan install Config::Simple
 
 
-Cmds 
+##Examples
+
+./samples/ex1
+run ../../tools/instrument.perl
+
+./samples/ex1
+run ../../tools/instrument.perl
 
 
 
