@@ -4,7 +4,7 @@
 
 ./tools/instrument.perl
 
-generate an bml file you can run into your ACCESS simulator or TV set.
+generate a BML file you can run into your ACCESS simulator or TV set.
 
 ##Config
 
@@ -33,12 +33,14 @@ sudo cpan -i Config::Simple
 
 ##Examples
 
-> cd samples/ex1
-> ../../tools/instrument.perl
+>$ cd samples/ex1
+
+>$ ../../tools/instrument.perl
 
 
-> ./samples/ex2
-> run ../../tools/instrument.perl
+>$ ./samples/ex2
+
+>$ run ../../tools/instrument.perl
 
 
 
