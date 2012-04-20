@@ -33,12 +33,14 @@ sudo cpan -i Config::Simple
 
 ##Examples
 
+First example
+
 >$ cd samples/ex1
 
 >$ ../../tools/instrument.perl
 
 
-
+Second example
 
 >$ ./samples/ex2
 
