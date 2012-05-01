@@ -4,7 +4,7 @@
 
 ./tools/instrument.perl
 
-generate a BML file you can run into your ACCESS simulator or TV set.
+generates a BML file that you can run with your ACCESS emulator or TV set.
 
 ##Config
 
@@ -18,33 +18,28 @@ jsFiles=xxx.js,xxx.js,xxx.js
 ##Requirements
 
 
-Perl
+###Perl
 
-JSCoverage
+###JSCoverage
 [JSCoverage](http://siliconforks.com/jscoverage/) 
 
-Perl module for configuration file
+###Perl module for configuration file
 [Config::Simple](http://search.cpan.org/~sherzodr/Config-Simple-4.59/Simple.pm#SIMPLE_CONFIGURATION_FILE/) 
 
-sudo cpan install Config::Simple
+    sudo cpan install Config::Simple
 or
-sudo cpan -i Config::Simple
+    sudo cpan -i Config::Simple
 
 
 ##Examples
 
-First example
+###First example
 
->$ cd samples/ex1
+    >$ cd samples/ex1
+    >$ ../../tools/instrument.perl
 
->$ ../../tools/instrument.perl
+###Second example
 
-
-Second example
-
->$ ./samples/ex2
-
->$ run ../../tools/instrument.perl
-
-
+    >$ ./samples/ex2
+    >$ run ../../tools/instrument.perl
 
