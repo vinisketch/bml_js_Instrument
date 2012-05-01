@@ -72,5 +72,3 @@ print OUTPUT "]]></script>\n</body>\n</bml>";
 close OUTPUT;
 rmtree $tempPath;
 
-
-#(rindex ($_,"jscoverage['utils.js'].source") == -1))
