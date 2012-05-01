@@ -35,7 +35,7 @@ https://github.com/vinisketch/bml_js_Instrument
 ]]></style>
 
 </head>
-<body onload="init()">
+<body>
   <p id="console">.</p>
   <p id="debug">Parse failed</p>
 
