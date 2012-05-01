@@ -91,6 +91,7 @@ function endAnalyse ()
       if (cov [i]) { index = index + 1; }
     }
     printlnDebug (key + ', coverage: ' + (index * 100 / cov.max) + '%');
+    printConsole ('Success: end of code');
   }
 }
 
