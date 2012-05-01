@@ -1,5 +1,14 @@
 #BML JavaScript Instrumentation Tool
 
+##About
+
+This tool helps to find issues in JavaScript code running in a LIME Browser.
+Some code that works in the emulator or in your development environment may
+fail on a TV, and the step by step debugging to locate the error can prove
+frustrating. Using this tool, you can run all steps at once and determine
+whether the code could run fully or at which point the code stopped, thanks
+to logs that indicate progress after each instruction.
+
 ##Execution
 
 ./tools/instrument.perl
