@@ -15,7 +15,7 @@ generates a BML file that you can run with your ACCESS emulator or TV set.
     outputIndex=startup.bml
 
     # list of the names of JavaScripts files to look for in jsPath folder
-    jsFiles=xxx.js,xxx.js,xxx.js
+    jsFiles=a.js,b.js,c.js
 
 
 ##Requirements
