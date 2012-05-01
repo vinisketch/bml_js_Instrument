@@ -26,20 +26,41 @@ or
 
 ##Examples
 
+After installing required software, you can check your installation by running
+the instrumentation tool on provided examples.
+
 ###First example
 
-    > cd samples/ex1
+    > cd samples/example1-instrument
+    > ./instrument.sh
+
+or
+
+    > cd samples/example1-instrument
     > ../../tools/instrument.perl
+
+A file named startup.bml should be generated in samples/example1-instrument.
 
 ###Second example
 
-    > ./samples/ex2
-    > run ../../tools/instrument.perl
+    > cd samples/example2-instrument
+    > ./instrument.sh
+
+or
+
+    > cd samples/example2-instrument
+    > ../../tools/instrument.perl
+
+A file named startup.bml should be generated in samples/example2-instrument.
 
 ##Config
 
+Create a new folder next to your project (here my-project), with a
+configuration file named config.cfg. You can use samples/example1-instrument/
+or samples/example2-instrument/ as a starting point.
+
     # relative path to the folder with JavaScript files
-    jsPath=./scripts
+    jsPath=../my-project/scripts
 
     # name of the BML file to generate
     outputIndex=startup.bml
@@ -49,7 +70,17 @@ or
 
 ##Execution
 
-./tools/instrument.perl
+To run the instrumentation tool, open a shell in the directory with your
+configuration file, and run the script instrument.perl:
 
-generates a BML file that you can run with your ACCESS emulator or TV set.
+    ../bml_js_Instrument/tools/instrument.perl
+
+You may need to adapt the above command depending on the relative location
+of the bml_js_Instrument/ folder.
+
+A file named startup.bml should be generated in the same folder. You can open
+this file using Access NetFront emulator or a TV set with a LIME/BML Browser.
+
+The generated file has self-contained styles and scripts, and does not depend
+on any part of the bml_js_Instrument/ project.
 
