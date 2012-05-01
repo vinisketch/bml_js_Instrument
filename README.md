@@ -9,26 +9,7 @@ frustrating. Using this tool, you can run all steps at once and determine
 whether the code could run fully or at which point the code stopped, thanks
 to logs that indicate progress after each instruction.
 
-##Execution
-
-./tools/instrument.perl
-
-generates a BML file that you can run with your ACCESS emulator or TV set.
-
-##Config
-
-    # relative path to the folder with JavaScript files
-    jsPath=./scripts
-
-    # name of the BML file to generate
-    outputIndex=startup.bml
-
-    # list of the names of JavaScripts files to look for in jsPath folder
-    jsFiles=a.js,b.js,c.js
-
-
 ##Requirements
-
 
 ###Perl
 
@@ -43,7 +24,6 @@ or
 
     sudo cpan -i Config::Simple
 
-
 ##Examples
 
 ###First example
@@ -55,4 +35,21 @@ or
 
     > ./samples/ex2
     > run ../../tools/instrument.perl
+
+##Config
+
+    # relative path to the folder with JavaScript files
+    jsPath=./scripts
+
+    # name of the BML file to generate
+    outputIndex=startup.bml
+
+    # list of the names of JavaScripts files to look for in jsPath folder
+    jsFiles=a.js,b.js,c.js
+
+##Execution
+
+./tools/instrument.perl
+
+generates a BML file that you can run with your ACCESS emulator or TV set.
 
