@@ -7,7 +7,7 @@ use File::Path;
 
 my $cfg = new Config::Simple ('config.cfg');
 my $outputIndex = $cfg->param('outputIndex');
-if (!defined ($outputIndex)) { $outputIndex = "index.bml"; }
+if (!defined ($outputIndex)) { $outputIndex = "startup.bml"; }
 
 my $jsPath = $cfg->param('jsPath');
 if (!defined ($jsPath)) { die ("pas de js path dans conf file") ; }
