@@ -71,4 +71,5 @@ print OUTPUT "endAnalyse ();\n";
 print OUTPUT "]]></script>\n</body>\n</bml>";
 
 close OUTPUT;
+print "Generated: $outputIndex";
 
