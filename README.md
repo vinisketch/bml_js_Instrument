@@ -8,11 +8,14 @@ generates a BML file that you can run with your ACCESS emulator or TV set.
 
 ##Config
 
-jsPath= xxx
+    # relative path to the folder with JavaScript files
+    jsPath=./scripts
 
-outputIndex=xxx.bml
+    # name of the BML file to generate
+    outputIndex=startup.bml
 
-jsFiles=xxx.js,xxx.js,xxx.js
+    # list of the names of JavaScripts files to look for in jsPath folder
+    jsFiles=xxx.js,xxx.js,xxx.js
 
 
 ##Requirements
