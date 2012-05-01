@@ -31,12 +31,6 @@ https://github.com/vinisketch/bml_js_Instrument
 }
 
 ]]></style>
-
-</head>
-<body>
-  <p id="console">.</p>
-  <p id="debug">Parse failed</p>
-
 <script type="text/javascript"><![CDATA[
 
 var jscoverage = new Object ();

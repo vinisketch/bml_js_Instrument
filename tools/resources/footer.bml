@@ -1,2 +1,8 @@
 endAnalyse ();
-]]></script>\n</body>\n</bml>
+]]></script>
+</head>
+<body>
+  <p id="console">.</p>
+  <p id="debug">Parse failed</p>
+</body>
+</bml>
