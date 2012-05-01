@@ -33,7 +33,6 @@ https://github.com/vinisketch/bml_js_Instrument
 }
 
 ]]></style>
-<script src="utils-inst.js"></script>
 
 </head>
 <body onload="init()">
