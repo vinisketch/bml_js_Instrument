@@ -40,13 +40,13 @@ sub findFirst {
 }
 
 sub parseFile {
-  
+
   my $file_path = $_[0];
 
   open (SRC,"$tempPath/$file_path") || die ("Failed to open $file_path") ;
-  
+
   findFirst ("$file_path");
-    
+
   while (<SRC>) {
     if ($_ =~ /_\$jscoverage\[([\'\/\w.]*)\]\[([\d]*)\]\+\+/)
     {
