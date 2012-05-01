@@ -24,6 +24,7 @@ my $base_path = abs_path($0);
 $base_path = substr ($base_path, 0, rindex ($base_path, "/"));
 
 open (HEAD_BML,  $base_path . "/resources/header.bml") || die ("Failed to open header.bml") ;
+open (END_BML,   $base_path . "/resources/footer.bml") || die ("Failed to open footer.bml");
 
 open (OUTPUT,">".$outputIndex) || die ("Failed to create $outputIndex") ;
 
@@ -67,8 +68,8 @@ close HEAD_BML;
 parseFile $_ for @jsFiles;
 rmtree $tempPath;
 
-print OUTPUT "endAnalyse ();\n";
-print OUTPUT "]]></script>\n</body>\n</bml>";
+while (<END_BML>) { print OUTPUT $_; }
+close END_BML;
 
 close OUTPUT;
 print "Generated: $outputIndex\n";
