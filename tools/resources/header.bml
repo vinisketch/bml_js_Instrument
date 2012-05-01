@@ -19,7 +19,6 @@ https://github.com/vinisketch/bml_js_Instrument
   height: 550px;
   top: 0px;
   left: 480px;
-  font-size: 18px;
 }
 
 #console{
@@ -29,7 +28,6 @@ https://github.com/vinisketch/bml_js_Instrument
   height: 550px;
   top: 0px;
   left: 0px;
-  font-size: 18px;
 }
 
 ]]></style>
