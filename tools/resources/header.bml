@@ -70,12 +70,12 @@ function addCov (t, l)
     cov.max = 0;
     jscoverage [t] = cov;
   }
-  
+
   if (!cov [l]) { cov [l] = 1; }
   else { cov [l] ++; }
-  
+
   if (cov.max < l) { cov.max = l; }
-  
+
   printDebug ('addCov ' + t + ': ' + l);
 }
 
