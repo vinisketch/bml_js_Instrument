@@ -65,10 +65,10 @@ while (<HEAD_BML>) { print OUTPUT $_; }
 close HEAD_BML;
 
 parseFile $_ for @jsFiles;
+rmtree $tempPath;
 
 print OUTPUT "endAnalyse ();\n";
 print OUTPUT "]]></script>\n</body>\n</bml>";
 
 close OUTPUT;
-rmtree $tempPath;
 
