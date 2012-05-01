@@ -28,6 +28,7 @@ jsFiles=xxx.js,xxx.js,xxx.js
 
     sudo cpan install Config::Simple
 or
+
     sudo cpan -i Config::Simple
 
 
@@ -35,11 +36,11 @@ or
 
 ###First example
 
-    >$ cd samples/ex1
-    >$ ../../tools/instrument.perl
+    > cd samples/ex1
+    > ../../tools/instrument.perl
 
 ###Second example
 
-    >$ ./samples/ex2
-    >$ run ../../tools/instrument.perl
+    > ./samples/ex2
+    > run ../../tools/instrument.perl
 
