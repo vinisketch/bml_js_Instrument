@@ -36,9 +36,9 @@ https://github.com/vinisketch/bml_js_Instrument
 
 </head>
 <body onload="init()">
-	<p id="console">.</p>
-	<p id="debug">Parse failed</p>
-	
+  <p id="console">.</p>
+  <p id="debug">Parse failed</p>
+
 <script type="text/javascript"><![CDATA[
 
 var jscoverage = new Object ();
