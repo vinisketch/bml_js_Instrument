@@ -2,7 +2,11 @@ endAnalyse ();
 ]]></script>
 </head>
 <body>
-  <p id="console">.</p>
-  <p id="debug">Parse failed</p>
+  <div class="left-pane">
+    <p id="console" class="left-pane-text">.</p>
+  </div>
+  <div class="right-pane">
+    <p id="debug" class="right-pane-text">Parse failed</p>
+  </div>
 </body>
 </bml>
