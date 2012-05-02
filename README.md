@@ -84,3 +84,8 @@ this file using Access NetFront emulator or a TV set with a LIME/BML Browser.
 The generated file has self-contained styles and scripts, and does not depend
 on any part of the bml_js_Instrument/ project.
 
+Once the BML file is fully loaded, the console on the left should display
+"Success: end of code" while the right panel should list the JavaScript files
+with a percentage that corresponds to the number of lines of code that ran
+during the script execution, out of the total lines of code in the script.
+
