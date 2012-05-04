@@ -66,7 +66,7 @@ or samples/example2-instrument/ as a starting point.
     outputIndex=startup.bml
 
     # list of the names of JavaScripts files to look for in jsPath folder
-    jsFiles=a.js,b.js,c.js
+    jsFiles=a.ecm,b.ecm,c.ecm
 
 ##Execution
 
