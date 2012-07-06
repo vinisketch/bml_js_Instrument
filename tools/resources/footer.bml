@@ -1,2 +1,12 @@
 endAnalyse ();
-]]></script>\n</body>\n</bml>
+]]></script>
+</head>
+<body>
+  <div class="left-pane">
+    <p id="console" class="left-pane-text">.</p>
+  </div>
+  <div class="right-pane">
+    <p id="debug" class="right-pane-text">Parse failed</p>
+  </div>
+</body>
+</bml>
